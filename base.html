@@ -10,6 +10,12 @@
             rel="stylesheet"
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
             crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet" />
         <link rel="stylesheet" href="static/css/styles.css" />
     </head>
     <body class="bg-light">
@@ -20,13 +26,11 @@
                     class="navbar navbar-expand-lg navbar-landing fixed-top"
                     id="navbar">
                     <div class="container">
-                        <a
-                            class="navbar-brand"
-                            href="{{ url_for('public.landing_page') }}">
+                        <a class="navbar-brand" href="#">
                             <img
-                                src="{{ url_for('static', filename='images/contabilizamelhorazul.svg') }}"
+                                src="static/images/logo8.svg"
                                 alt="Logo Contabiliza Melhor"
-                                height="30" />
+                                height="40" />
                         </a>
                         <button
                             class="navbar-toggler py-0 fs-20 text-body"
@@ -55,22 +59,15 @@
                                 <li class="nav-item">
                                     <a
                                         class="nav-link"
-                                        href="{{ url_for('public.planos') }}"
-                                        >Planos</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link"
                                         href="{{ url_for('public.contact') }}"
-                                        >Contato</a
+                                        >Serviços</a
                                     >
                                 </li>
                                 <li class="nav-item">
                                     <a
                                         class="nav-link"
                                         href="{{ url_for('public.servicos') }}"
-                                        >Serviços</a
+                                        >Contato</a
                                     >
                                 </li>
                             </ul>
@@ -99,7 +96,7 @@
                             type="button"
                             data-bs-target="#carouselExampleIndicators"
                             data-bs-slide-to="0"
-                            class="active"
+                            class="active carousel-btn"
                             aria-current="true"
                             aria-label="Slide 1"></button>
                         <button
@@ -116,86 +113,482 @@
 
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="row g-0 align-items-center p-5">
+                            <div class="row align-items-center p-5">
                                 <div
                                     class="col-md-6 order-md-1 carousel-content">
                                     <h1>
-                                        Sua contabilidade <br /><span
+                                        Tenha o controle total <br /><span
                                             class="highlight"
-                                            >em um clique</span
+                                            >da sua empresa.</span
                                         >
                                     </h1>
                                     <p>
-                                        Otimize seu tempo e foque no crescimento
-                                        do seu negócio. Tenha as finanças da sua
-                                        empresa na palma da sua mão.
+                                        Obtenha uma visão 360º de suas finanças.
+                                        Analise dados em tempo real, identifique
+                                        oportunidades de crescimento e garanta a
+                                        saúde financeira do seu negócio com uma
+                                        gestão eficiente e transparente.
                                     </p>
                                 </div>
                                 <div
-                                    class="col-md-6 order-md-2 carousel-illustration">
+                                    class="col-md-6 order-md-2 carousel-illustration d-flex justify-content-center">
                                     <img
                                         src="static/images/carrossel01.png"
                                         alt="Ilustração de Contabilidade"
-                                        class="d-block w-100 img-fluid" />
+                                        class="img-fluid" />
                                 </div>
                             </div>
                         </div>
 
                         <div class="carousel-item">
-                            <div class="row g-0 align-items-center p-5">
+                            <div class="row align-items-center p-5">
                                 <div
                                     class="col-md-6 order-md-1 carousel-content">
                                     <h1>
-                                        Transforme sua gestão <br /><span
+                                        Simplifique a gestão. <br /><span
                                             class="highlight"
-                                            >com BPO Financeiro</span
+                                            >Otimize resultados.</span
                                         >
                                     </h1>
                                     <p>
-                                        Conte com especialistas para cuidar das
-                                        suas finanças e foque no que realmente
-                                        importa: seu negócio.
+                                        Chega de se sobrecarregar com tarefas
+                                        financeiras. Com nosso BPO, você delega
+                                        a rotina burocrática e conta com a
+                                        expertise de quem entende do assunto
+                                        para tomar decisões estratégicas com
+                                        segurança.
                                     </p>
                                 </div>
                                 <div
-                                    class="col-md-6 order-md-2 carousel-illustration">
+                                    class="col-md-6 order-md-2 carousel-illustration d-flex justify-content-center">
                                     <img
                                         src="static/images/carrossel02.png"
                                         alt="Ilustração de BPO Financeiro"
-                                        class="d-block w-100 img-fluid" />
+                                        class="img-fluid" />
                                 </div>
                             </div>
                         </div>
 
                         <div class="carousel-item">
-                            <div class="row g-0 align-items-center p-5">
+                            <div class="row align-items-center p-5">
                                 <div
                                     class="col-md-6 order-md-1 carousel-content">
                                     <h1>
-                                        Controle total <br /><span
+                                        Tenha o controle total <br /><span
                                             class="highlight"
-                                            >da sua gestão financeira</span
+                                            >da sua gestão financeira.</span
                                         >
                                     </h1>
                                     <p>
-                                        Tenha visibilidade completa das
-                                        receitas, despesas e fluxo de caixa para
-                                        tomar as melhores decisões.
+                                        Nossa contabilidade é pensada para
+                                        empreendedores. Visualize suas finanças
+                                        com clareza, simplifique processos
+                                        complexos e acelere seu crescimento com
+                                        dados precisos.
                                     </p>
                                 </div>
                                 <div
-                                    class="col-md-6 order-md-2 carousel-illustration">
+                                    class="col-md-6 order-md-2 carousel-illustration d-flex justify-content-center">
                                     <img
                                         src="static/images/carrossel03.png"
                                         alt="Ilustração de Gestão Financeira"
-                                        class="d-block w-100 img-fluid" />
+                                        class="img-fluid" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- SECTION 2 - MINI CARDS -->
+            <section class="service-section py-5">
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <h2 class="display-5 fw-bold text-dark">
+                            Temos os serviços certos para simplificar a sua
+                            gestão
+                        </h2>
+                        <p class="lead text-muted">
+                            Oferecemos soluções completas para a melhorar a
+                            saúde do seu negócio.
+                        </p>
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="service-card p-4 rounded shadow-sm">
+                                <i
+                                    class="bi bi-file-earmark-text-fill fs-1 mb-3 text-icon-card"></i>
+                                <h3 class="h5 fw-bold mb-2">
+                                    Emissão de Notas Fiscais
+                                </h3>
+                                <p class="text-muted">
+                                    Descomplique a emissão de NF-e, NFS-e e
+                                    NFC-e. Nossa plataforma garante agilidade e
+                                    conformidade fiscal para o seu negócio, de
+                                    ponta a ponta.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="service-card p-4 rounded shadow-sm">
+                                <i
+                                    class="bi bi-graph-up-arrow fs-1 mb-3 text-icon-card"></i>
+                                <h3 class="h5 fw-bold mb-2">
+                                    Gestão Patrimonial e Financeira
+                                </h3>
+                                <p class="text-muted">
+                                    Tenha total controle sobre seu patrimônio e
+                                    finanças. Oferecemos análises detalhadas e
+                                    relatórios precisos para otimizar seus
+                                    recursos e tomar as melhores decisões.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-12 mb-4">
+                            <div class="service-card p-4 rounded shadow-sm">
+                                <i
+                                    class="bi bi-calculator-fill fs-1 mb-3 text-icon-card"></i>
+                                <h3 class="h5 fw-bold mb-2">
+                                    Serviços de Contabilidade
+                                </h3>
+                                <p class="text-muted">
+                                    Mais do que números, oferecemos uma
+                                    contabilidade estratégica. Cuidamos de toda
+                                    a sua rotina fiscal e trabalhista para que
+                                    você tenha tranquilidade e foco total em
+                                    seus objetivos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+        <!-- SECTION 3 - BPO -->
+        <section class="intro-section py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div
+                        class="col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
+                        <img
+                            src="static/images/bpo1.svg"
+                            alt="Ilustração BPO"
+                            class="img-fluid"
+                            style="max-height: 350px" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2 class="display-5 fw-bold text-bpo">
+                            Afinal, o que é BPO?
+                        </h2>
+                        <p class="lead text-muted my-4">
+                            A sigla BPO significa
+                            <em>Business Process Outsourcing</em>, ou seja, é a
+                            terceirização de tarefas financeiras de uma empresa
+                            para uma empresa especializada. Desta forma, podemos
+                            definir o BPO Financeiro como uma solução que visa
+                            otimizar a gestão financeira de uma empresa,
+                            permitindo que ela se concentre em suas atividades
+                            principais e aumente sua eficiência operacional.
+                        </p>
+                        <a href="#" class="btn btn-lg btn-custom-green"
+                            >Saiba Mais</a
+                        >
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <h3 class="h4 fw-bold mb-4">
+                            Principais serviços oferecidos no nosso BPO:
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="row mt-3 justify-content-center">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div
+                            class="service-card-bpo p-4 rounded shadow-sm d-flex flex-column align-items-center text-center">
+                            <i
+                                class="bi bi-cloud-check-fill fs-1 mb-3 text-bpo"></i>
+                            <h5 class="fw-bold mb-2">ERP em nuvem</h5>
+                            <p class="text-muted">
+                                Nosso sistema centraliza todas as informações da
+                                sua empresa. Tenha acesso em tempo real a dados
+                                e relatórios de qualquer lugar.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div
+                            class="service-card-bpo p-4 rounded shadow-sm d-flex flex-column align-items-center text-center">
+                            <i class="bi bi-bank fs-1 mb-3 text-bpo"></i>
+                            <h5 class="fw-bold mb-2">Conciliação bancária</h5>
+                            <p class="text-muted">
+                                Fazemos a importação automática do seu extrato.
+                                Agilize o processo financeiro e garanta precisão
+                                total dos seus dados, sem erros.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div
+                            class="service-card-bpo p-4 rounded shadow-sm d-flex flex-column align-items-center text-center">
+                            <i class="bi bi-cart-fill fs-1 mb-3 text-bpo"></i>
+                            <h5 class="fw-bold mb-2">
+                                Gestão de vendas e compras
+                            </h5>
+                            <p class="text-muted">
+                                Simplifique o controle de contas a pagar e a
+                                receber. Mantenha o fluxo de caixa saudável e
+                                sua gestão financeira sob controle.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div
+                            class="service-card-bpo p-4 rounded shadow-sm d-flex flex-column align-items-center text-center">
+                            <i class="bi bi-wallet2 fs-1 mb-3 text-bpo"></i>
+                            <h5 class="fw-bold mb-2">
+                                Gestão financeira completa
+                            </h5>
+                            <p class="text-muted">
+                                Do operacional ao estratégico. Acompanhe
+                                relatórios detalhados e tenha uma visão clara da
+                                saúde financeira da sua empresa para tomar
+                                decisões assertivas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION 4 - CONT+BPO -->
+        <section class="bpo-features-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold text-dark">
+                        Contabilidade integrada ao BPO
+                    </h2>
+                    <p class="lead text-muted mx-auto" style="max-width: 800px">
+                        Com o nosso serviço de BPO e Contabilidade integrados,
+                        você consegue ter controle de seus recebimentos,
+                        programar as cobranças recorrentes, acompanhar o fluxo
+                        de caixa, com envio de lembretes de pagamento, e saber
+                        se seu negócio está tendo lucro ou prejuízo.
+                    </p>
+                </div>
+
+                <div class="row g-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center">
+                            <i
+                                class="bi bi-file-earmark-bar-graph fs-2 text-icon-card me-4"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1">
+                                    Escrituração contábil e fiscal integrada
+                                </h5>
+                                <p class="text-muted">
+                                    Garantimos a precisão de seus registros, com
+                                    relatórios que oferecem uma visão clara da
+                                    saúde financeira da sua empresa.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center">
+                            <i
+                                class="bi bi-send-check-fill fs-2 text-icon-card me-4"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1">
+                                    Elaboração, apuração e envio das declarações
+                                </h5>
+                                <p class="text-muted">
+                                    Cuidamos de todas as suas obrigações fiscais
+                                    e tributárias, garantindo o cumprimento dos
+                                    prazos e a conformidade legal do seu
+                                    negócio.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center">
+                            <i
+                                class="bi bi-cash-stack fs-2 text-icon-card me-4"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1">
+                                    Emissão das guias de recolhimento de
+                                    tributos
+                                </h5>
+                                <p class="text-muted">
+                                    Automatizamos a emissão e o envio de todas
+                                    as guias de impostos, para que você não
+                                    precise se preocupar com a burocracia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center">
+                            <i
+                                class="bi bi-pc-display-horizontal fs-2 text-icon-card me-4"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1">
+                                    Software de gestão financeira
+                                </h5>
+                                <p class="text-muted">
+                                    Utilizamos plataformas que automatizam
+                                    processos, melhoram a precisão dos dados
+                                    financeiros e oferecem relatórios em tempo
+                                    real.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center">
+                            <i
+                                class="bi bi-graph-up-arrow fs-2 text-icon-card me-4"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1">
+                                    Análise de desempenho
+                                </h5>
+                                <p class="text-muted">
+                                    Realizamos análises financeiras periódicas,
+                                    como relatórios de lucro e prejuízo, para
+                                    que você entenda a saúde financeira da sua
+                                    empresa.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTIION 5 - CALL TO ACTION -->
+        <section class="cta-section py-5">
+            <div class="container text-center">
+                <div class="cta-card p-5 rounded shadow-lg">
+                    <h2 class="display-5 fw-bold text-dark mb-4">
+                        Encontre o serviço ideal para o seu negócio.
+                    </h2>
+                    <p
+                        class="lead text-muted mb-4 mx-auto"
+                        style="max-width: 700px">
+                        Descubra como nossas soluções de contabilidade e BPO
+                        podem impulsionar sua eficiência e garantir o controle
+                        total da sua gestão financeira.
+                    </p>
+                    <a href="#" class="btn btn-lg btn-custom-green"
+                        >Explorar Todos os Serviços</a
+                    >
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer class="text-muted py-5" id="main-footer">
+            <div class="container">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div
+                            class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
+                            <a href="#" class="d-inline-block mb-3">
+                                <img
+                                    src="static/images/logo8.svg"
+                                    alt="Logo C&M Contabilidade"
+                                    height="40" />
+                            </a>
+                            <p class="mt-2 mb-0 text-light">
+                                Copyright © 2024 C&M Contabilidade <br />
+                                e BPO Financeiro.
+                            </p>
+                            <p class="text-light">
+                                Todos os direitos reservados.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 text-center text-md-center">
+                            <h5 class="mb-3 text-light">Páginas</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a
+                                        href="#"
+                                        class="text-light text-decoration-none"
+                                        >Sobre Nós</a
+                                    >
+                                </li>
+                                <li class="mb-2">
+                                    <a
+                                        href="#"
+                                        class="text-light text-decoration-none"
+                                        >Blog</a
+                                    >
+                                </li>
+                                <li class="mb-2">
+                                    <a
+                                        href="#"
+                                        class="text-light text-decoration-none"
+                                        >Contato</a
+                                    >
+                                </li>
+                                <li class="mb-2">
+                                    <a
+                                        href="#"
+                                        class="text-light text-decoration-none"
+                                        >Preços</a
+                                    >
+                                </li>
+                                <li class="mb-2">
+                                    <a
+                                        href="#"
+                                        class="text-light text-decoration-none"
+                                        >Depoimentos</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 text-center text-md-end">
+                            <h5 class="mb-3 text-light">Contato</h5>
+                            <ul
+                                class="list-unstyled d-flex justify-content-end justify-content-md-end gap-2">
+                                <li>
+                                    <a href="#" class="social-icon-circle"
+                                        ><i class="bi bi-instagram"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social-icon-circle"
+                                        ><i class="bi bi-twitter-x"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social-icon-circle"
+                                        ><i class="bi bi-youtube"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social-icon-circle"
+                                        ><i class="bi bi-facebook"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!-- SCRIPTS -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

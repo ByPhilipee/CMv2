@@ -5,10 +5,10 @@ body,
 html {
     overflow-x: hidden;
     width: 100%;
-    background-color: #f2f2eb;
+    font-family: 'Roboto', sans-serif;
 }
 .layout-wrapper{
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 
@@ -41,11 +41,11 @@ html {
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link:hover {
-    color: #1f818c;
+    color: #bf9999;
 }
 
 .btn.btn-primary {
-    background-color: #1f818c;
+    background-color: #bf9999;
     border: none;
     font-size: 0.8125rem;
     font-weight: 400;
@@ -56,40 +56,172 @@ html {
 
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
-    background-color: #176a73;
+    background-color: #ac8484;
 }
 
-
-/* teste */
-
-
-.btn-group.radio .btn-check:active+.btn-light,
-.btn-group.radio .btn-check:checked+.btn-light,
-.btn-group.radio .btn-light.active,
-.btn-group.radio .btn-light.dropdown-toggle.show,
-.btn-group.radio .btn-light:active {
-    background-color: rgba(41, 156, 219, .2);
-    color: #299cdb
-}
-
-.nav-pills :is(.nav-link.active, .show>.nav-link) {
-    -webkit-box-shadow: none;
-    box-shadow: none
-}
-
-@media (max-width: 991.98px) {
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .btn.btn-primary {
-        margin-top: 1rem;
-    }
-}
 
 /*  HEADER  */
 
 /* SECTION 1 - CARROSSEL */
+.carousel-section{
+    background-color: #E5E1D8;
+}
 
-
+.carousel-content{
+    padding-right: 50px;
+}
+.carousel-illustration img {
+    max-height: 450px; /* Define a altura máxima da imagem */
+    width: auto; /* Garante que a largura se ajuste proporcionalmente */
+}
+.carousel-indicators [data-bs-target]{
+    background-color: #ac8484;
+}
+/* Para garantir a responsividade em telas menores */
+@media (max-width: 768px) {
+    .carousel-illustration img {
+        max-height: 250px; /* Reduz a altura máxima em telas pequenas */
+    }
+}
 /* SECTION 1 - CARROSSEL */
+
+/* SECTION 2 - SERVIÇOS */
+.service-section {
+    background-color: #f8f9fa; /* Um cinza bem claro para o fundo da seção */
+}
+
+.service-card {
+    min-height: 260px; /* Define a altura mínima de 260px */
+    background-color: #ffffff; /* Fundo branco para os cards */
+    border: 1px solid #e0e0e0; /* Borda sutil */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Efeito de "subir" no hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra mais forte no hover */
+}
+
+/* Estilo para os ícones */
+.service-icon {
+    width: 60px; /* Tamanho do ícone */
+    height: 60px;
+}
+
+/* Cores do texto */
+.service-card h3 {
+    color: #495057; /* Cor do texto do título */
+}
+
+.service-card p {
+    color: #868e96; /* Cor do texto da descrição */
+}
+.text-icon-card{
+    color: #8eaba9 !important;
+}
+/* SECTION 2 - FIM */
+/* SECTION 3 - BPO */
+.text-bpo{
+    color:#ac8484
+}
+
+/* Estilo para o botão verde */
+.btn-custom-green {
+    background-color: #8eaba9;
+    border-color: #8eaba9;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-custom-green:hover {
+    background-color: #7f9997;
+    border-color: #7f9997;
+    color: #fff;
+}
+.service-card-bpo{
+    min-height: 300px; /* Define a altura mínima de 260px */
+    background-color: #ffffff; /* Fundo branco para os cards */
+    border: 1px solid #e0e0e0; /* Borda sutil */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+/* section 4
+ */
+.bpo-features-section .row {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* SECTION 5 - CTA */
+.cta-card {
+    background-color: #E5E1D8; /* Fundo branco do card */
+    border: 1px solid #e0e0e0;
+    padding: 3rem; /* Espaçamento interno */
+}
+
+.btn-cta {
+    background-color: #8eaba9; /* Cor do botão, pode usar a do seu header */
+    border-color: #8eaba9;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #176a73;
+    border-color: #176a73;
+}
+/* FOOTER */
+#main-footer{
+    background-color: #8eaba9;
+}
+#main-footer a {
+
+    transition: color 0.3s ease;
+}
+
+#main-footer a:hover {
+    color: #ac8484;
+}
+
+.social-icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.social-icon-circle:hover {
+    background-color: #c7a6a6;
+    border-color: #c7a6a6;
+
+}
+
+.social-icon-circle i {
+    font-size: 1.1rem;
+        /* Adicionando um pequeno ajuste negativo para centralizar */
+    margin-left: -2px; 
+}
+.text-footer{
+    text-decoration: none !important;
+    color:#bf9999
+}
+.text-footer-title{
+    color:#9e9e9e;
+    font-weight: 400;
+}
+@media (max-width: 767.98px) {
+    .text-center.text-md-start {
+        text-align: center !important;
+    }
+}
