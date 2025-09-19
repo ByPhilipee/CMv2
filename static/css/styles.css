@@ -60,11 +60,52 @@ html {
 }
 
 
-/*  HEADER  */
+/* section 0 - boas vindas */
+
+.new-section-container{
+    padding: 0px;
+    background-color: #fff; /* Example: use a clean background */
+        border: 1px solid #e0e0e0; /* Borda sutil */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    
+}
+/* New Section Styling */
+.new-section-template {
+    height: 500px; /* Fixed height for the entire section */
+    overflow: hidden; /* Ensures content doesn't spill over */
+}
+
+/* Styles for the text container */
+.new-section-template .text-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+}
+
+.btn-custom{
+    background-color: #E5E1D8;
+    border: 1px solid #E5E1D8; 
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.btn-custom:hover{
+    background-color: #cecbc6;
+    border: 1px solid #cecbc6; 
+}
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .new-section-template {
+    height: auto; /* Height becomes automatic on mobile for better usability */
+  }
+}
 
 /* SECTION 1 - CARROSSEL */
 .carousel-section{
     background-color: #E5E1D8;
+        border: 1px solid #e0e0e0; /* Borda sutil */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .carousel-content{
