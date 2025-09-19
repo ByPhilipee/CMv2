@@ -225,3 +225,116 @@ html {
         text-align: center !important;
     }
 }
+
+
+/* CONTACT SECTION */
+
+
+/* Título e subtítulo */
+.contact-title {
+    color: #ac8484; /* Laranja da imagem */
+}
+
+/* Card principal */
+.contact-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 3rem; /* Borda arredondada do card */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Garante que as bordas arredondadas internas funcionem */
+}
+
+/* Lado esquerdo do card (Informações de contato) */
+.contact-info-card {
+    background-color: #8eaba9; /* Azul escuro da imagem */
+    border-radius: 3rem 0 0 3rem; /* Borda arredondada só no canto esquerdo */
+    color: #fff;
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique por cima do background */
+}
+
+/* Opcional: Adiciona um gradiente ou forma sutil para o fundo do div preto */
+.contact-info-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Substituído por um gradiente sutil para evitar problemas de SVG data-uri */
+    background: radial-gradient(circle at 10% 80%, rgba(255,255,255,0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 20%, rgba(255,255,255,0.08) 0%, transparent 40%);
+    opacity: 1; /* Aumenta a opacidade para garantir visibilidade */
+    z-index: -1; /* Fica atrás do conteúdo do card */
+    border-radius: inherit; /* Herda o border-radius para não sair do div */
+}
+
+
+.contact-info-card .contact-icon {
+    font-size: 1.2rem;
+}
+
+.contact-info-card .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.contact-info-card .social-icons a:hover {
+    color: #ac8484;
+}
+
+/* Estilos do formulário */
+.contact-form-control {
+    border: 1px solid #ced4da;
+    border-radius: 1;
+    box-shadow: none !important;
+}
+
+.contact-form-control:focus {
+    border-color: #8eaba9;
+}
+
+.form-check-input {
+    border-color: #ced4da;
+}
+
+.form-check-input:checked {
+    background-color: #8eaba9;
+    border-color: #8eaba9;
+}
+
+/* Botão de envio */
+.contact-btn {
+    background-color: #121f37;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 0.75rem 2.5rem;
+    transition: background-color 0.3s;
+    /* Adiciona margem à direita para separar do ícone */
+    margin-right: 15px;
+}
+
+.contact-btn:hover {
+    background-color: #1a2c4e;
+    color: #fff;
+}
+
+/* Ícone do avião de papel */
+.paper-plane-icon {
+    font-size: 1.8rem; /* Tamanho do ícone */
+    color: #ced4da; /* Cor cinza claro, como na imagem original */
+    transform: rotate(45deg); /* Rotaciona para imitar um avião de papel */
+    position: absolute; /* Posição absoluta para o alinhamento */
+    right: 15px; /* Ajusta a posição à direita */
+    bottom: 1rem; /* Alinha com a parte inferior do botão */
+    line-height: 1; /* Garante que o ícone não adicione altura extra */
+}
+
+
+/* Media Queries para ajustar o layout em telas menores */
+@media (max-width: 991.98px) {
+    .contact-info-card {
+        border-radius: 3rem 3rem 0 0 !important;
+    }
+}
