@@ -177,7 +177,8 @@ html {
 }
 /* FOOTER */
 #main-footer{
-    background-color: #8eaba9;
+    background-color: #ac8484;
+
 }
 #main-footer a {
 
@@ -194,9 +195,9 @@ html {
     align-items: center;
     width: 40px;
     height: 40px;
-    border: 1px solid #fff;
+    border: 1px solid #d8d8d8;
     border-radius: 50%;
-    color: #fff;
+    color: #d8d8d8;
     text-decoration: none;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
@@ -217,7 +218,7 @@ html {
     color:#bf9999
 }
 .text-footer-title{
-    color:#9e9e9e;
+    color:#d8d8d8 !important;
     font-weight: 400;
 }
 @media (max-width: 767.98px) {
@@ -225,14 +226,17 @@ html {
         text-align: center !important;
     }
 }
-
+.text-footer-small{
+    font-size: 0.85rem;
+    color: #d8d8d8 !important;
+}
 
 /* CONTACT SECTION */
 
 
 /* Título e subtítulo */
 .contact-title {
-    color: #ac8484; /* Laranja da imagem */
+    color: #bf9999; /* Laranja da imagem */
 }
 
 /* Card principal */
@@ -281,7 +285,7 @@ html {
 }
 
 .contact-info-card .social-icons a:hover {
-    color: #ac8484;
+    color: #bf9999;
 }
 
 /* Estilos do formulário */
